@@ -42,11 +42,11 @@ jobs:
       - run: npm run cy:run:cucumber
       
       # Gerar o relatorio  em html
-      - run : npm run report:cucumber
+      - run: npm run report:cucumber
       
       # Publicar relatorio em html
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
